@@ -27,9 +27,9 @@ Dengan menggunakan metode enkripsi dan dekripsi yang sederhana, siapa pun dapat 
 
 Jalankan Command Makefile
 ```
-> make run
+make run
 ```
 Jalankan Command Mode Normal
 ```
-> go run main.go
+go run main.go
 ```
