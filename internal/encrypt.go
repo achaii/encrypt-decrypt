@@ -12,13 +12,13 @@ import (
 // Fungsi untuk membuat instance baru 
 func NewEncrypter(enkripsi, auntetikasi []byte) (*Encrypter, error) {
 	if len(enkripsi) > 32 {
-		return nil, errors.New("enkripsi tidak valid, panjang enkripsi melebihi 32bit")
+		return nil, errors.New("enkripsi tidak valid, panjang enkripsi melebihi 32 karakter")
 	}
 
 	if auntetikasi == nil {
 		auntetikasi = enkripsi
 	} else if len(auntetikasi) > 32 {
-		return nil, errors.New("auntetikasi tidak valid, panjang autentikasi melebihi 32bit")
+		return nil, errors.New("autentikasi tidak valid, panjang autentikasi melebihi 32 karakter")
 	}
 
 	return &Encrypter{enkripsi: enkripsi, auntetikasi: auntetikasi}, nil

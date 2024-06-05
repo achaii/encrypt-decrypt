@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//32bit dan/atau 32 karakter
+	//32 karakter
 	enkripsi := []byte("abcdefghijklmnopqrstupwxyz123456")
 	auntetikasi := []byte("654321zyxwputsrqponmlkjihgfedcba")
 
